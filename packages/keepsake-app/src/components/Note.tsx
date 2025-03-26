@@ -42,7 +42,7 @@ export default function Note({ id, title, isChecklist, content }: NoteProp){
     </div>
     <div className="content">
         {
-            isChecklist && (typeof content) == "object"? 
+            isChecklist && Array.isArray(content) ? 
             <div>{content.map((point) => {
                 return <label className="check-container">
                     <input type="checkbox" />

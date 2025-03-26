@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "serve" : "json-server db.json"
+    "serve" : "json-server db.json",
+    "check" : "tsc -b"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3",

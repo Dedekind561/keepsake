@@ -5,7 +5,7 @@ import { label } from "./Gallery.tsx";
 interface CustomLabelInputProps {
   setNoteLabels: React.Dispatch<React.SetStateAction<label[]>>;
   username: string;
-  getUserID(username: string): Promise<any>;
+  getUserID(username: string): Promise<string>;
 }
 
 export const CustomLabelInput = ({

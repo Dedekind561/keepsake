@@ -5,7 +5,7 @@ export default function LogIn() {
   const [password, setPassword] = useState("");
 
   async function handleSubmit() {
-    let response = await fetch(`http://localhost:3000/usernames`, {
+    const response = await fetch(`http://localhost:3000/usernames`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

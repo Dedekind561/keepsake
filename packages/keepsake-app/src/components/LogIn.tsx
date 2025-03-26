@@ -17,17 +17,17 @@ export default function LogIn({username, setUsername}: LogInProps){
     const [validated, setValidated] = useState(false)
 
     async function getUsers(){
-        let response = await fetch(`http://localhost:3000/usernames`)
-        let data: User[] = await response.json()
+        const response = await fetch(`http://localhost:3000/usernames`)
+        const data: User[] = await response.json()
         return data
     }
 
     async function handleSubmit(){
-        let users = await getUsers()
+        const users = await getUsers()
         console.log(users)
         let match = false;
         users.map((user) => {
-            (username == user.username && password == user.password) ?  match = true : null
+            return (username == user.username && password == user.password) ?  match = true : null
         })
         setValidated(match)
     }

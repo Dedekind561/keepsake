@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+    <h1>Hello world</h1>
       <Navbar />
       <div className="sidebar-gallery">
         <Sidebar
